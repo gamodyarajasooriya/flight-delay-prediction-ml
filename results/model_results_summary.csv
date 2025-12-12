@@ -1,13 +1,13 @@
 Preprocessing,Model,Accuracy,F1,ROC-AUC
-Standard Pipeline (Split),Logistic Regression,0.8017,0.0,0.6228206611002048
-Standard Pipeline (Split),Random Forest,0.79305,0.14182044370723615,0.6367927433075113
-Standard Pipeline (Split),XGBoost,0.8002,0.10843373493975904,0.6604245730721863
-Advanced Pipeline (Split),Logistic Regression,0.8006,0.03391472868217054,0.6316066272056398
-Advanced Pipeline (Split),Random Forest,0.78445,0.17681878938323467,0.6360555538467141
-Advanced Pipeline (Split),XGBoost,0.797,0.13024850042844902,0.6520598468546823
-Preprocessed Features Sample,Logistic Regression,0.7984346411872332,0.0,0.6272966940830285
-Preprocessed Features Sample,Random Forest,0.7904045537710916,0.14581607290803644,0.6412789021770986
-Preprocessed Features Sample,XGBoost,0.8000609880056923,0.1315673289183223,0.6681485497511791
-Preprocessed Features Advanced,Logistic Regression,0.79995,0.08128587830080368,0.6958945064481294
-Preprocessed Features Advanced,Random Forest,0.8155,0.33989266547406083,0.7157944860741272
-Preprocessed Features Advanced,XGBoost,0.82505,0.31646806016800155,0.7388161415187382
+Standard Pipeline (Split),Logistic Regression,0.8017,0,0.622820661
+Standard Pipeline (Split),Random Forest,0.79305,0.141820444,0.636792743
+Standard Pipeline (Split),XGBoost,0.8002,0.108433735,0.660424573
+Advanced Pipeline (Split),Logistic Regression,0.8006,0.033914729,0.631606627
+Advanced Pipeline (Split),Random Forest,0.78445,0.176818789,0.636055554
+Advanced Pipeline (Split),XGBoost,0.797,0.1302485,0.652059847
+Preprocessed Features Sample,Logistic Regression,0.798434641,0,0.627296694
+Preprocessed Features Sample,Random Forest,0.790404554,0.145816073,0.641278902
+Preprocessed Features Sample,XGBoost,0.800060988,0.131567329,0.66814855
+Preprocessed Features Advanced,Logistic Regression,0.79995,0.081285878,0.695894506
+Preprocessed Features Advanced,Random Forest,0.8155,0.339892665,0.715794486
+Preprocessed Features Advanced,XGBoost,0.82505,0.31646806,0.738816142
