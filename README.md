@@ -159,3 +159,24 @@ I analyse feature importance for both tuned models.
 
 For an operations team, that trade‑off is acceptable: it is better to get a few extra “this flight might be delayed” warnings than to be surprised by delays that the model could have flagged.
 
+## Environment
+
+To reproduce the results:
+
+```bash
+pip install -r requirements.txt
+
+
+## Reflection
+
+- What worked:
+  - Advanced preprocessing (time bins, route/carrier features, target encoding) plus XGBoost improved F1 and ROC‑AUC on delayed flights.
+  - Decision‑threshold tuning let me align the model with a clear business goal (better to over‑warn than miss delays).
+
+- What didn’t help as much:
+  - Tuning Random Forest gave only a small F1 gain and actually reduced ROC‑AUC.
+  - Focusing only on accuracy hid how many delays were being missed.
+
+- What I’d do next:
+  - Add weather and airport‑congestion features to see how much they boost performance.
+  - Deploy the final pipeline as a small API or Streamlit app so users can score flights interactively.
