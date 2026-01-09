@@ -180,3 +180,15 @@ pip install -r requirements.txt
 - What I’d do next:
   - Add weather and airport‑congestion features to see how much they boost performance.
   - Deploy the final pipeline as a small API or Streamlit app so users can score flights interactively.
+
+## Quick demo notebook
+
+To make the model easy to try out, I added `demo_predictions.ipynb`, which:
+
+- Loads the tuned XGBoost model saved in `models/best_xgb.joblib`.
+- Samples a few flights from `results/processed_features_advanced.csv`.
+- For each flight, prints the predicted probability of delay and the final prediction (DELAY / ON‑TIME) using my chosen decision threshold.
+
+This lets anyone run a few example predictions without rerunning training.
+
+**Final model used in the demo:** tuned XGBoost trained on the advanced preprocessing setup, saved as `models/best_xgb.joblib` and evaluated with a decision threshold chosen to prioritise catching delayed flights over raw accuracy.
